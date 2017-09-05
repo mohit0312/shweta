@@ -1,3 +1,5 @@
+#reverse function
+
 list2=[]
 def rec(list1):
     length=len(list1)
