@@ -1,33 +1,22 @@
-def arearectangle(length,breadth):
-   '''
-   objective: to calculate the area of rectangle
-   input:
-         length and breadth of rectangle
-   approach: multiply length and breadth
-   '''
-     area = length *breadth
-    return area
-def areasquare(side):
-   '''
-   objective: to calculate the area of square
-   input:
-         length of square
-   approach: multiply side by itself
-   '''
-   return(arearectangle(side,side))
+'''
+    objective: To flatten the list
+    input parameters: the initial list to be flatten
+                      the list in which the result to be stored
+    result: the flattened list        
+'''
+def list_fun(list1,list2,i):
+    if i==len(list1) :
+        return list2
+    elif type(list1[i])==list :
+        list2.extend(list1[i])
+        return list_fun(list1,list2,i+1)
+    else:
+        list2.append(list1[i])
+        return list_fun(list1,list2,i+1)
+    #i=i+1
+    #return(list_fun(list1,list2,i))
     
-
-def main():
-   '''
-     objective: to calculate the area of square
-     input: length of square
-     approach: multiply side by side itself
-     '''
-     a = int(input("enter the length of a side"))
-
-     print("area of square is",areasquare(a))
-     print("end of output)
-
-  if __name__ == '__main__':
-       main()
-print("end of program")    
+l=[2,3,[8,4],7,[9,1]] 
+m=[]
+i=0
+list_fun(l,m,i)   
