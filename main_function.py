@@ -5,8 +5,8 @@ def main():
     '''
        objective : to find the area of rectangle,square and triangle
        input parameters :
-                    length of rectangle
-                    breadth of rectangle
+                    length:length of rectangle
+                    breadth: breadth of rectangle
                     side of square
                     base of triangle
                     height of triangle
