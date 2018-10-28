@@ -1,7 +1,7 @@
 def insert_fun(num,list1):
     ''' Objective: to insert a no. in a sorted list
         input parameter: a no. to be inserted
-        output: a list after adding the desired no.
+        output: a list after adding the desired no. given
     '''
     #approach: using recursion
     
