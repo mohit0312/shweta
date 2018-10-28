@@ -1,6 +1,6 @@
 def increment(n):
     '''
-       objective: to increment a no.
+       objective: to increment a no. given by user
        input parameters: a number
        output: incremented no.
     '''
